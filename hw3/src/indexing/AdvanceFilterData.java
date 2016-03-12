@@ -146,34 +146,7 @@ public class AdvanceFilterData {
 		return sortedMap;
 	}
 	
-	/* edited : date 10 march vishal
-	 * private static void count(List<String> listWords2, BufferedWriter write)
-	 * throws IOException {
-	 * 
-	 * if (!stopWordsSet.contains(listWords2)) {
-	 * 
-	 * if (!listWords2.isEmpty() ) { Map<String, Integer> hashMap = new
-	 * TreeMap<String, Integer>(Collections.reverseOrder()); for (String string
-	 * :listWords2) { string = string.toLowerCase();
-	 * 
-	 * if(hashMap.containsKey(string)){ int current_count = hashMap.get(string);
-	 * current_count++; hashMap.replace(string, current_count); } else
-	 * hashMap.put(string, 1); } hashMap = sortByComparator(hashMap); for
-	 * (String string1 : hashMap.keySet()) { int count1 = hashMap.get(string1);
-	 * write.write(string1+"\t"+count1+"\n"); } System.out.println(
-	 * "hashmap size   > "+hashMap.size()); } } }
-	 * 
-	 * private static Map sortByComparator(Map unsortMap) { List list = new
-	 * LinkedList<>(unsortMap.entrySet()); // sort list based on comparator
-	 * Collections.sort(list, new Comparator() { public int compare(Object o1,
-	 * Object o2) { return ((Comparable) ((Map.Entry)
-	 * (o2)).getValue()).compareTo(((Map.Entry) (o1)).getValue()); } });
-	 * 
-	 * // put sorted list into map again Map sortedMap = new LinkedHashMap();
-	 * for (Iterator it = list.iterator(); it.hasNext();) { Map.Entry entry =
-	 * (Map.Entry) it.next(); sortedMap.put(entry.getKey(), entry.getValue()); }
-	 * return sortedMap; }
-	 */	
+	
 
 	private static void fillStopWordsSet() throws IOException {
 
